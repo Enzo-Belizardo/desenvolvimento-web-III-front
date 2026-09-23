@@ -1,4 +1,6 @@
-function Cabecalho() {
+import { Link } from 'react-router-dom';
+
+export function Header() {
   return (
     <header className="header-container">
       <div className="header-info">
@@ -14,4 +16,3 @@ function Cabecalho() {
     </header>
   );
 }
-export default Cabecalho
