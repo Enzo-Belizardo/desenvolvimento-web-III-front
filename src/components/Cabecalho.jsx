@@ -1,18 +1,12 @@
-import { Link } from 'react-router-dom';
-
-export function Header() {
+function Cabecalho() {
   return (
-    <header className="header-container">
-      <div className="header-info">
-        <p className="docente-info">Profa Mestre Sirley Ambrosia Vitorio Addão</p>
-        <h1 className="aluno-info">Desenvolvido por: Enzo Belizardo</h1>
+    <header className="cabecalho">
+      <div className="cabecalho-conteudo">
+        <h1>Sistema de Gestão de Comércio</h1>
+        <p>Gerenciamento de produtos, clientes e funcionários</p>
       </div>
-      <nav className="header-nav">
-        <Link to="/">Início</Link>
-        <Link to="/chamados">Gerenciamento</Link>
-        <Link to="/chamados/listar">Listar Chamados</Link>
-        <Link to="/chamados/cadastrar">Novo Chamado</Link>
-      </nav>
     </header>
-  );
+  )
 }
+
+export default Cabecalho
